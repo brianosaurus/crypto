@@ -37,6 +37,15 @@ Consensus Mechanism: EQUIHASH
 
 Limitations: 1 MB blocks at 10 min. Transaction rates aren't high enough.
 
+## Bitcoin-NG
+Lnk: https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf
+
+Description: The system does a leader election every epoch (a certain time quanta) via Bitcoin's cryptographic puzzle. The winner then makes serialized blocks of transactions as fast as possible. The system enforces rules that if a leader cheats they are stripped of their funds. This, cheating won't yield any profit so leaders are incentivised to be honest. After that leader's epoch is over, a new leader is chosen. NG says they can do thousands of transactions/sec.
+
+Consensus Mechanism: PoW for leader election. None for microblock (transaction blocks) creation.
+
+Limitations: PoW issues still exist.
+
  
 
 ## GHOST
