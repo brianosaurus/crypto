@@ -1,8 +1,5 @@
-
-×General Crypto
-Add item member
-Review of Distributed Ledger Technologies
-Bitcoin
+# Review of Distributed Ledger Technologies
+## Bitcoin
 
 Link: https://bitcoin.org/bitcoin.pdf 
 
@@ -18,11 +15,7 @@ How BTC Transactions are signed.
 
  
 
-
-
- 
-
-Bitcoin Cash
+## Bitcoin Cash
 Link: https://www.bitcoincash.org/bitcoin.pdf  
 
 Description: The original blockchain with one difference: 8mb block sizes.
@@ -35,7 +28,7 @@ Limitations: Power usage. Transaction rates aren't high enough.
 
  
 
-Bitcoin Gold
+## Bitcoin Gold
 Link: https://bitcoingold.org/wp-content/uploads/2017/10/BitcoinGold-Roadmap.pdf 
 
 Description: Bitcoin Gold is a fork of Bitcoin with replay protection, 10 min blocks, DigiShield protection, EQUIHASH PoW, and funds for community outreach. There has been complaints about Bitcoin Gold because the founders effectively premined a lot of it to pay for *development* but ultimately it was a cash grab.
@@ -46,7 +39,7 @@ Limitations: 1 MB blocks at 10 min. Transaction rates aren't high enough.
 
  
 
-GHOST
+## GHOST
 Link: https://eprint.iacr.org/2013/881.pdf 
 
 Description: A modification of the 'longest chain' algorithm to ensure security in systems that have fast transaction times. Blockchains with high block creation rates suffer from the time it takes blocks to propigate through the network. Therefore, new valid blocks become stale quickly allowing strong miners to gain an unfair advantage or pool an unfair advantage.
@@ -67,7 +60,7 @@ It is proposed to fix this issue by using a DAG in the Includive Protocols white
 
  
 
-Ethereum
+## Ethereum
 Link: http://www.the-blockchain.com/docs/Ethereum_white_paper-a_next_generation_smart_contract_and_decentralized_application_platform-vitalik-buterin.pdf 
 
 Description: The original smart contract blockchain that uses GAS to charge contracts to execute.
@@ -80,7 +73,7 @@ Limitations: High transaction volume, GAS can be expensive, turing completeness 
 
  
 
-Casper
+## Casper
 Link: https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
 
 Description: A proof of stake system for Ethereum. Casper bonds validators who either borrower or purchase their way into their positions. They then benefit from being a validator by being paid.
@@ -93,7 +86,7 @@ Limitations: Super high throughput is not possible with 250 geographically distr
 
  
 
-LightningNetwork
+## LightningNetwork
 Link: https://lightning.network/lightning-network-paper.pdf 
 
 Description: The LightningNetwork allows off-chain transactions which can be executed immediately. When the time comes, the off-chain transactions can be settled on the blockchain.
@@ -106,7 +99,7 @@ Limitations: Off chain transactions require that the multi-sig wallet has BTC in
 
  
 
-SPECTRE
+## SPECTRE
 Link: https://eprint.iacr.org/2016/1159.pdf
 
 Description: A DAG (Directed Acyclic Graph) of blocks that are added to the graph asynchronously. It allows for extremely high throughput while maintaining increased security/protection from a 51% style attack.
@@ -123,7 +116,7 @@ Limitations: Vulnerable to a 51% attack even though transaction speeds don't inc
 
  
 
-IOTA
+## IOTA
 Link: https://iota.org/IOTA_Whitepaper.pdf 
 
 Description: Very similar to Spectre however based on nodes for transactions rather than blocks. DAG of all txns is called the Tangle. 
@@ -136,7 +129,7 @@ Consensus Mechanism: PoW and Cumulative Weighting or txns.
 
  
 
-ZCash
+## ZCash
 Link: http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf
 
 Description: zCash is a optionally private cryptocurrency where senders, recipients, and amounts are hidden from view. It uses zk-SNARKs to obscure all details of transactions. zk-SNARKs is a cryptographic system that can prove hidden details of a transaction while revealing some public details. Using zk-SNARKs, zCash can prove that there is a specific valid transaction in the ledger while hiding all other details from anyone but the recipient (also hidden to all but the recipient).
@@ -149,7 +142,7 @@ Limitations: zk-SNARKs proofs are CPU to intensive to generate and, therefore, u
 
  
 
-BTC Private
+## BTC Private
 Link: https://btcprivate.org/whitepaper.pdf 
 
 Description: BTC Private is a fork of ZClassic which is a fork of ZCash. The fork doesn't have the 20% miner reward back to the foundation. What's interesting is that BTC Private is replaying BTCs TXNs and ZClassic's to give 1:1 coins for the other coins. It also employs replay attack protection by denoting the SIGHASH_FORKID. BTC Private also uses BIP 9 to make democratic decisions. EQUIHASH is used to be more democratic and to not have ASIC farms take it over. Blocks are 2MB and block times are 2.5 minutes. Contributions to the foundation are voluntary from the miners. 
@@ -160,7 +153,7 @@ Limitations: Same limitations as zCash. zkSNARKs are CPU intensive. Private chai
 
  
 
-Monero
+## Monero
 Link: https://downloads.getmonero.org/whitepaper_annotated.pdf 
 
 Description: Monero is an anonymous currency that uses Ring Signatures to hide senders of coins and, also, uses several heuristics to keep the recipient anonymous. Ring signatures are a group or randomly chosen public keys and one real/signing key grouped together so that you cannot know who actually signed the txn. However, you know that one of them has signed (but, once again, can't tell who). Furthermore, the recipient of a txn is completely obscured so there is no way to trace, through history, who is sending to whom. In Monero parlance, the Ring Signature is Anonymous and the receiving address is Unlinkable (to the actual recipient).
@@ -173,7 +166,7 @@ Limitations: Like zCash, Monero's wallets have to scan every txn to know what an
 
  
 
-OmiseGo
+## OmiseGo
 
 Link: https://cdn.omise.co/omg/whitepaper.pdf 
 
@@ -187,7 +180,7 @@ Limitations: Final settlement has to occur over Ethereum in an ETH smart contrac
 
  
 
-MakerDAO
+## MakerDAO
 Link: https://makerdao.com/whitepaper/DaiDec17WP.pdf 
 
 Description: MakerDAO introduces two coins (MKR and DAI). MKR is used to pay fees on the network and DAI is the stable coin portion. Essentially, MakerDAO uses ETH deposits which are ether rewarded or forfeited to stabilize the DAI. At the end of the day, people in the Maker system are paying a fee to keep a stable coin that actually isn't completely stable. It is still affected by price shocks but they tend to be temporary. 
@@ -200,7 +193,7 @@ Limitations: People are paying ETH fees to use the system. One has to question t
 
  
 
-BaseCoin
+## BaseCoin
 Link: http://www.getbasecoin.com/basecoin_whitepaper_0_99.pdf 
 
 Description: BaseCoin introduces three coins into its stable coin system (base bonds, base shares, and base coins). Base coins are the stable portion of the system while base bonds are used to restrict the money supply and base shares (in addition to paying out base shares dividends) are used to increase the money supply. 
@@ -219,13 +212,13 @@ BaseCoin attempts to suggest buying and selling of bonds is how the US treasury 
 
 1. Changes in the reserve requirement for fractional reserve lending by banks.
 
-2. Changes in the discount rate at the discount window (basically changing the interest rate the fed charges financial institutions to borrow).
+1. Changes in the discount rate at the discount window (basically changing the interest rate the fed charges financial institutions to borrow).
 
-3. Opem market operations (buying and selling of government securities).
+1. Opem market operations (buying and selling of government securities).
 
  
 
-EOS
+## EOS
 Link: https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md 
 
 Description: EOS aims to be the Ethereum for high volume and low latency. it employs a permission system that's similar to org charts. EOS also executes DAPPs in parallel.
@@ -238,7 +231,7 @@ Limitations: Not enough information to determine.
 
  
 
-Ripple
+## Ripple
 Link: https://ripple.com/files/ripple_consensus_whitepaper.pdf 
 
 Description: The Ripple protocol (RPCA - Ripple Protocol Consensus Algorithm) is a consensus algorithm with pre-selected master nodes called the UNL (unique node list). Ripple also has ancillary software to facilitate cross currency trades using XRP (the native currency) as a go-between. 
@@ -251,7 +244,7 @@ Limitations: Centralized. FBA requires 80% validator agreement to be secure.
 
  
 
-Stellar
+## Stellar
 Link: https://www.stellar.org/papers/stellar-consensus-protocol.pdf 
 
 Description: Stellar aims to be an improvement upon Ripple. It is a federated byzantine agreement protocol where nodes can choose the validators they listen to. I think of it like a school of fish where you only see the fish around you however you also get to choose where in the school you exist. Ultimately, the school moves in the same direction even though every fish only sees the fish around them.
@@ -264,7 +257,7 @@ Limitations: The network will halt if there isn't agreement. Nodes have to reach
 
  
 
-Telegram
+## Telegram
 Link: https://drive.google.com/file/d/1ucUeKg_NiR8RxNAonb8Q55jZha03WC0O/view 
 
 Description: Telegram wants to build what appears to be Filecoin, SPECTRE, and LightningNetwork all in one but with one exception: They want to use hypercube routing which implies centralized control over nodes.
@@ -277,7 +270,7 @@ Limitations: Telegram claims their userbase is enough to reach network effects h
 
  
 
-STEEM
+## STEEM
 Link: https://steem.io/SteemWhitePaper.pdf 
 
 Description: Steem is a content creator blockchain where creators are rewarded with Steem and consumers vote with Steem to reward the creators. There are three currencies, STEEM, SP (steem power), and SBD (Steem Dollars). SP has a 13 week vesting schedule. STEEM is liquid. and SBD are (basically) US Treasuries with variable payouts and timeframes. SBD are used to stabilize STEEM from wild fluctuations.
@@ -290,7 +283,7 @@ Limitations: A lot of content is free or advertising based. Why pay for it? Unde
 
  
 
-MimbleWimble
+## MimbleWimble
 Link: https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.pdf
 
 Description: This is a system that is very similar to Bitcoin but with non-interactive CoinJoin and the blockchain only contains enough information to verify its current state. 
@@ -302,7 +295,7 @@ Consensus Mechanism: PoW
 Limitations: Some of the scripting capabilities of Bitcoin had to be removed. Additionally, it is a PoW system and suffers from the mining issues Bitcoin suffers from.
 
  
-Grin
+## Grin
 Link: http://grin-tech.org/ 
 
 Description: Grin is an implementation of the MimbleWimble transaction format with extensions required for a complete blockchain.
@@ -314,7 +307,7 @@ Consensus Mechanism: Cuckoo Cycle which is Grin's Proof of Work system. The Cuck
 Limitations: Unknown.
 
  
-Paxos
+## Paxos
 Link: https://en.wikipedia.org/wiki/Paxos_(computer_science) 
 
 Description: A distributed consensus algorithm that is one of the most cited. It comes in various forms (Byzantine, fast, cheap, and non-byzantine).
@@ -327,7 +320,7 @@ Limitations: Centralized, not byzantine tolerant in the basic form however there
 
  
 
-0x
+## 0x
 Link: https://0xproject.com/pdfs/0x_white_paper.pdf
 
 Description:  Ox is a protocol for a distributed exchange of ERC-20 tokens on the Ethereum protocol. The issue with decentralized exchanges on Ethereum is that people need to spend a lot of gas to manage their orders between ERC-20 tokens. 0x alleviates this problem by managing the orderbook of-fchain with instant and cheap on-chain settlement.
@@ -340,7 +333,7 @@ Limitations: Still needs gas to operate. Liquidity is an issue for DEXs (distrib
 
  
 
-dharma.io
+## dharma.io
 Link: https://github.com/dharmaprotocol/WhitePaper/blob/master/English/WhitePaper%5BEN%5D.md 
 
 Description: dharma.io is a loan chain that uses 0x as its exchange and is an ERC-20 token. The players include a RAA (risk assessment attester) or underwriter, a lender, and a borrower. The intent is to create a trustless environment where these parties can interact with each other, browse the loan 'order book', and resell loans.
@@ -357,7 +350,7 @@ For example:
 
 1. In private credit it’s the creditor who prices credit.
 
-z2. The servicer can be the underwriter, could be the creditor or could be a third party.
+1. The servicer can be the underwriter, could be the creditor or could be a third party.
 
  
 
@@ -365,7 +358,7 @@ For example, in a mortgage https://www.investopedia.com/terms/m/msr.asp
 
  
 
-NuCypher
+## NuCypher
 Link: https://cdn2.hubspot.net/hubfs/2807639/NuCypher%20KMS%20Technical%20White%20Paper.pdf 
 
 Description: NuCypher is a distributed proxy re-encryption service. The premise is that I can give it encrypted text and delegate the decryption of that text to others without NuCypher's nodes ever knowing or being able to know the content of that text. There are several schemes they support: threshold of K of N, M of N, standard bilinear polynomials (RSA), and an actual symmetric cypher (old school!). There is an added benefit in that the re-encryption keys pseudo-anonymize the originator. 
@@ -378,7 +371,7 @@ Limitations: Not sure how popular this will be. Otherwise, seems GREAT!
 
  
 
-IPFS
+## IPFS
 Link: https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf 
 
 Description: IPFS is a distributed files system on distributed nodes. It's called the permanent web in that files written in IPFS cannot be removed once broadcast. It is common for clients to encrypt files before writing to IPFS so that they can only be read by one or multiple parties (using k of n or m of n encryption schemes). Essentially it's a distributed hash table of files stored on the network.
@@ -402,7 +395,7 @@ Limitations:
 
  
 
-Chia
+## Chia
 Link: 
 
 Description: Bitcoin competitor that claims to be 'green', based on hard drive space rather then computation.
@@ -415,7 +408,7 @@ Limitations:
 
   
 
-Augur
+## Augur
 Link: 
 
 Description: ERC20 token based prediction market based on hivemind. Exists ontop of Ethereum. Augur is has a work token, REP, which allows the reporting of events to the prediction market.
@@ -428,7 +421,7 @@ Limitations:
 
  
 
-Gnosis
+## Gnosis
 Link: 
 
 Description:
@@ -441,7 +434,7 @@ Limitations:
 
  
 
-Hivemind
+## Hivemind
 Link: 
 
 Description: sidechain based prediction market, which augur is derived from
@@ -454,7 +447,7 @@ Limitations:
 
  
 
-ByteBall
+## ByteBall
 Link: 
 
 Description:
@@ -467,7 +460,7 @@ Limitations:
 
  
 
-RaiBlocks/Nano
+## RaiBlocks/Nano
 Link: 
 
 Description:
