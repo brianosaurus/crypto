@@ -46,6 +46,15 @@ Consensus Mechanism: PoW for leader election. None for microblock (transaction b
 
 Limitations: PoW issues still exist.
 
+## Qtum
+Link: https://qtum.org/wp-content/uploads/2017/01/Qtum-technical-white-paper-draft-version.pdf
+
+Description: Qtum forked the Ethereum Virtual Machine (EVM) into a UTXO (Bitcoin style) blockchain. One can write solidity for smark contracts on the Qtum chain. They created a fascade which makes the EVM think it's running on an ethereum blockchain. They also created some new opcodes so that gas can be returned if there's an OUT_OF_GAS exception. The blockchain has 2 new trie's (one for contracts, one for storing contract state).
+
+Consensus Mechanism: PoW
+
+Limitations: Qtum magically combines all of Ethereum's problems as well as Bitcoins. Namely, each node needs to run contract code and spit the fee. Also, PoW issues still exist.
+
  
 
 ## GHOST
