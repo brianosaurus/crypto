@@ -273,6 +273,14 @@ Consensus Mechanism: Modified FBA (sliced FBA)
 
 Limitations: The network will halt if there isn't agreement. Nodes have to reach agreement in rounds which means ledgers don't get published until that occurs.
 
+## MobileCoin
+Link: https://www.mobilecoin.com/whitepaper-en.pdf
+
+Description: MobileCoin aims to take Stellar and run the Stella Consensus Protocol (SCP) inside of an Intel SGX/TxE (also called an enclave) which is a trusted execution environment. By doing so, consensus cannot be manipulted (theoretically).
+
+Consensus Mechanism: SCP
+
+Limitations: The SGX is only so big and that fact means it's difficult to shove everything you need into it for consensus.
  
 
 ## Telegram
