@@ -37,6 +37,24 @@ Consensus Mechanism: EQUIHASH
 
 Limitations: 1 MB blocks at 10 min. Transaction rates aren't high enough.
 
+## Bitcoin-NG
+Lnk: https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eyal.pdf
+
+Description: The system does a leader election every epoch (a certain time quanta) via Bitcoin's cryptographic puzzle. The winner then makes serialized blocks of transactions as fast as possible. The system enforces rules that if a leader cheats they are stripped of their funds. This, cheating won't yield any profit so leaders are incentivised to be honest. After that leader's epoch is over, a new leader is chosen. NG says they can do thousands of transactions/sec.
+
+Consensus Mechanism: PoW for leader election. None for microblock (transaction blocks) creation.
+
+Limitations: PoW issues still exist.
+
+## Qtum
+Link: https://qtum.org/wp-content/uploads/2017/01/Qtum-technical-white-paper-draft-version.pdf
+
+Description: Qtum forked the Ethereum Virtual Machine (EVM) into a UTXO (Bitcoin style) blockchain. One can write solidity for smark contracts on the Qtum chain. They created a fascade which makes the EVM think it's running on an ethereum blockchain. They also created some new opcodes so that gas can be returned if there's an OUT_OF_GAS exception. The blockchain has 2 new trie's (one for contracts, one for storing contract state).
+
+Consensus Mechanism: PoW
+
+Limitations: Qtum magically combines all of Ethereum's problems as well as Bitcoins. Namely, each node needs to run contract code and spit the fee. Also, PoW issues still exist.
+
  
 
 ## GHOST
@@ -255,6 +273,14 @@ Consensus Mechanism: Modified FBA (sliced FBA)
 
 Limitations: The network will halt if there isn't agreement. Nodes have to reach agreement in rounds which means ledgers don't get published until that occurs.
 
+## MobileCoin
+Link: https://www.mobilecoin.com/whitepaper-en.pdf
+
+Description: MobileCoin aims to take Stellar and run the Stella Consensus Protocol (SCP) inside of an Intel SGX/TxE (also called an enclave) which is a trusted execution environment. By doing so, consensus cannot be manipulted (theoretically).
+
+Consensus Mechanism: SCP
+
+Limitations: The SGX is only so big and that fact means it's difficult to shove everything you need into it for consensus.
  
 
 ## Telegram
