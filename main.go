@@ -1,3 +1,5 @@
+// An implementation of https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing
+// This video explains it: https://www.youtube.com/watch?v=kkMps3X_tEE
 package main
 
 import (
