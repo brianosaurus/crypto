@@ -107,10 +107,10 @@ end.join
 
 puts "ENCODED: #{encoded_answer}"
 
-#$stuff.each_with_index do |elem, index|
-#  puts "#{elem.sort.join(' ')}"
-#  #puts "#{index} #{elem.max_by { |i| elem.count(i) }}"
-#end
+$stuff.each_with_index do |elem, index|
+  puts "#{elem.sort.join(' ')}"
+  #puts "#{index} #{elem.max_by { |i| elem.count(i) }}"
+end
 
 # xor_messages.each do |msg| 
 #   x = msg[21].hex
