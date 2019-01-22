@@ -44,7 +44,7 @@ $stuff = []
 def xor_with_target(str, target)
   puts str
   convert_to_hex_array(str).each_with_index.map do |elem, index|
-    res = target.map do |chr| 
+    res = target.map do |chr|
       val = chr.hex ^ elem
 
       if (val >= 'A'.ord && val <= 'Z'.ord) || (val >= 'a'.ord && val <= 'z'.ord)
@@ -89,7 +89,7 @@ xor_messages.each { |msg| puts xor_with_chr(msg, ' '.ord) }
 #xor_messages.each { |msg| xor_with_chr(msg, 'a'.ord) }
 
 # convert_to_hex_array(target_cypertext).map do |elem|
-#   if $stuff[elem.chr] 
+#   if $stuff[elem.chr]
 #     print " #{elem.chr} "
 #   else
 #     print elem
@@ -100,19 +100,24 @@ xor_messages.each { |msg| puts xor_with_chr(msg, ' '.ord) }
 #   puts "#{k} -> #{v.join(' ')}"
 # end
 
-to_encode = "The secret message is: When using a stream cipher, never use the key more than once" 
-encoded_answer = to_encode.scan(/./).map do |chr| 
+to_encode = "The secret message is: When using a stream cipher, never use the key more than once"
+encoded_answer = to_encode.scan(/./).map do |chr|
   "%02x" % chr.ord
 end.join
 
-puts "ENCODED: #{encoded_answer}"
+# puts "ENCODED: #{encoded_answer}"
+
+puts "\n\nCiphertexts\n\n"
+cipher_texts.each { |x| puts x }
+
+puts "\n\n"
 
 $stuff.each_with_index do |elem, index|
   puts "#{elem.sort.join(' ')}"
   #puts "#{index} #{elem.max_by { |i| elem.count(i) }}"
 end
 
-# xor_messages.each do |msg| 
+# xor_messages.each do |msg|
 #   x = msg[21].hex
 #   chr = x ^ 'e'.ord
 #   puts chr.chr
